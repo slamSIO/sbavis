@@ -37,28 +37,12 @@
 					<a href="/avis/<?= $unAvis[ 'id_avis' ] ?>/supprimer">Supprimer</a>
 					
 				<?php } ?>
-				
-				
-				
-			
+					
 			<?php } ?>
 			
 		</div>
 		
 		<hr />
-			
-		<!--
-			
-		<form action="/sbateliers/ateliers/<?= $atelier[ 'numero' ] ?>/commenter" method="POST">
-		
-			<textarea name="commentaire" rows="10" cols="40" >
-			</textarea>
-			
-			<input type="submit" value="Valider" />
-		
-		</form>
-		
-		-->
 		
 	</body>
 	
