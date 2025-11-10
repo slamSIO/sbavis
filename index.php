@@ -25,10 +25,13 @@
 		session_start() ;
 		require "controleurs/ctrl-consulter-avis.php" ;
 	}
+	elseif( $route == '/avis/enregistrer' ){
+		session_start() ;
+		require "controleurs/ctrl-enregistrer-avis.php" ;
+	}
 	elseif( preg_match( '#^/avis/([0-9]+)/supprimer$#' , $route , $atomes ) ){
 		session_start() ;
 		$numAvis = $atomes[ 1 ] ;
-		//echo "Supprimer $numAvis" ;
 		require "controleurs/ctrl-supprimer-avis.php" ;
 	}
 	else {

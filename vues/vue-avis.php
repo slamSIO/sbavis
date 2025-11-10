@@ -44,6 +44,25 @@
 		
 		<hr />
 		
+		<h3>Nouvel avis :</h3>
+		<form action="/avis/enregistrer" method="POST">
+			
+			<label for="note">Note (entre 0 et 5) :</label>
+			<input type="number" id="note" name="note" min="0" max="5" step="1" value="5" required>
+		
+			<br/>
+		
+			<label for="commentaire">Commentaire :</label>
+			</br>
+			<textarea id="commentaire" name="commentaire" rows="10" cols="40" >
+			</textarea>
+			
+			<br/>
+			
+			<input type="submit" value="Enregistrer" />
+		
+		</form>
+		
 	</body>
 	
 </html>
